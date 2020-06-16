@@ -1,5 +1,49 @@
-/* 
-your styles should be here
-there is no need to import tailwind's base, components or utilities
-we already imported them for you in /css_org/main.xxxxxxx.chunk.css file
- */
+.bom {
+  display:none !important;
+}
+
+.contact-textarea::-moz-placeholder {
+  font-size: 15px;
+}
+
+.contact-textarea:-ms-input-placeholder {
+  font-size: 15px;
+}
+
+.contact-textarea::-ms-input-placeholder {
+  font-size: 15px;
+}
+
+.contact-textarea::placeholder {
+  font-size: 15px;
+}
+
+@media screen and (max-width: 800px) {
+  .address {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .newyork, .carolina, .uganda {
+    width: 48%;
+  }
+
+  .uganda {
+    margin: 20px auto 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .address {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .newyork, .carolina, .uganda {
+    width: 100%;
+  }
+
+  .carolina, .uganda {
+    margin: 20px auto 0;
+  }
+}
