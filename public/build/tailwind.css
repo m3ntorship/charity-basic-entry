@@ -26,40 +26,37 @@
   background-color: #f4f4f5;
 }
 
-.hover-trigger .hover-target {
-  display: none;
+.card-trigger .child-target {
+  opacity: 0;
+  transition: opacity .2s ease-in ;
 }
 
-.hover-trigger:hover .hover-target {
-  display: block;
-  -webkit-animation: slidein 1s ease-in-out 1 0s;
-          animation: slidein 1s ease-in-out 1 0s;
+.card-trigger:hover .child-target {
+  opacity: 1;
 }
 
-@-webkit-keyframes slidein{
-  0%{
-    transform: rotate(xx) translateX(-30px);
-    opacity: 0;
-  }
-
-  100%{
-    transform: rotate(xx) translateX(0);
-    opacity: 1;
-  }
+.custom-h{
+  height: 20.8rem;
 }
 
-@keyframes slidein{
-  0%{
-    transform: rotate(xx) translateX(-30px);
-    opacity: 0;
-  }
-
-  100%{
-    transform: rotate(xx) translateX(0);
-    opacity: 1;
-  }
+.custom-w {
+  width: 16.8rem;
 }
 
-/* .elementToAnimate{
-  animation: yourAnimation 1s infinite 0s linear;
-} */
+.custom-mt {
+  margin-top: 4.8rem;
+}
+
+body {
+  background: url('/static/media/circle.6f1eba2b.png') no-repeat;
+  background-position: -90px 2400px;
+  background-size: 30%;
+}
+
+.contact--options 
+.contact--map a:hover img,
+.contact--email a:hover img,
+.contact--phone a:hover img {
+  -webkit-filter: brightness(419%);
+          filter: brightness(419%)
+}
