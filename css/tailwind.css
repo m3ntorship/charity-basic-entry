@@ -12,3 +12,30 @@
 .gray-bg {
   background-color: #f4f4f5;
 }
+
+
+.hover-trigger .hover-target {
+  display: none;
+}
+
+.hover-trigger:hover .hover-target {
+  display: block;
+  animation: slidein 1s ease-in-out 1 0s;
+
+}
+
+
+@keyframes slidein{
+  0%{
+      transform: rotate(xx) translateX(-30px);
+      opacity: 0;
+      }
+  100%{
+      transform: rotate(xx) translateX(0);
+      opacity: 1;
+      }
+}
+
+/* .elementToAnimate{
+  animation: yourAnimation 1s infinite 0s linear;
+} */
