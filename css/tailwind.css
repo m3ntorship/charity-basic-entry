@@ -1,5 +1,5 @@
 .bom {
-  display:none !important;
+  display: none !important;
 }
 
 
@@ -16,14 +16,14 @@
 
 .card-trigger .child-target {
   opacity: 0;
-  transition: opacity .2s ease-in ;
+  transition: opacity .3s ease-in;
 }
 
 .card-trigger:hover .child-target {
   opacity: 1;
 }
 
-.custom-h{
+.custom-h {
   height: 20.8rem;
 }
 
@@ -35,15 +35,27 @@
   margin-top: 4.8rem;
 }
 
-body {
+.question-section {
   background: url('/static/media/circle.6f1eba2b.png') no-repeat;
-  background-position: -90px 2400px;
-  background-size: 30%;
+  background-position: -93px 50px;
+  background-size: 400px 400px;
 }
 
-.contact--options 
-.contact--map a:hover img,
-.contact--email a:hover img,
-.contact--phone a:hover img {
-  filter: brightness(419%)
+
+.phone--icon {
+  filter: invert(50%) sepia(11%) saturate(1949%) hue-rotate(115deg) brightness(104%) contrast(86%);
+}
+
+
+.contact--options .contact--map a:hover .img-container,
+.contact--email a:hover .img-container,
+.contact--phone a:hover .img-container {
+  background-color: #3d9c86;
+
+}
+
+.contact--map a:hover .img-container img,
+.contact--email a:hover .img-container img,
+.contact--phone a:hover .img-container img {
+  filter: brightness(419%);
 }
