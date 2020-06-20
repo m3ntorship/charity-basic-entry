@@ -3,16 +3,20 @@
 }
 
 
+
+/* Form Section */
+
+.gray-bg {
+  background-color: #f4f4f5;
+}
+
 .contact-textarea::placeholder {
   font-size: 15px;
   padding-top: 1.25rem;
 }
 
 
-.gray-bg {
-  background-color: #f4f4f5;
-}
-
+/* Volunteers Section */
 
 .card-trigger .child-target {
   opacity: 0;
@@ -21,6 +25,23 @@
 
 .card-trigger:hover .child-target {
   opacity: 1;
+}
+
+.card--fade>div {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #1f3948;
+  z-index: 5;
+  opacity: 0;
+  transition: opacity .4s ease-in;
+}
+
+.card-trigger:hover>.card--fade>div,
+.social--icons:hover+.card--fade>div {
+  opacity: .3;
 }
 
 .custom-h {
@@ -34,6 +55,9 @@
 .custom-mt {
   margin-top: 4.8rem;
 }
+
+
+/* Have Question  */
 
 .question-section {
   background: url('/static/media/circle.6f1eba2b.png') no-repeat;
