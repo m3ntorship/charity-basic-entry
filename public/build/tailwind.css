@@ -72,8 +72,8 @@
 
 .question-section {
   background: url('/static/media/circle.6f1eba2b.png') no-repeat;
-  background-position: -93px 50px;
-  background-size: 400px 400px;
+  background-position: -70px 55px;
+  background-size: 390px 390px;
 }
 
 .phone--icon {
@@ -92,4 +92,11 @@
 .contact--phone a:hover .img-container img {
   -webkit-filter: brightness(419%);
           filter: brightness(419%);
+}
+
+/* Donations Section */
+
+.donation__inputs {
+  width: 11.3rem;
+  height: 5rem;
 }
