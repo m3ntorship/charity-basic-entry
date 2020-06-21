@@ -1,7 +1,14 @@
 .bom {
-  display:none !important;
+  display: none !important;
 }
 
+
+
+/* Form Section */
+
+.gray-bg {
+  background-color: #f4f4f5;
+}
 
 .contact-textarea::placeholder {
   font-size: 15px;
@@ -9,6 +16,70 @@
 }
 
 
-.gray-bg {
-  background-color: #f4f4f5;
+/* Volunteers Section */
+
+.card-trigger .child-target {
+  opacity: 0;
+  transition: opacity .3s ease-in;
+}
+
+.card-trigger:hover .child-target {
+  opacity: 1;
+}
+
+.card--fade>div {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #1f3948;
+  z-index: 5;
+  opacity: 0;
+  transition: opacity .4s ease-in;
+}
+
+.card-trigger:hover>.card--fade>div,
+.social--icons:hover+.card--fade>div {
+  opacity: .3;
+}
+
+.custom-h {
+  height: 20.8rem;
+}
+
+.custom-w {
+  width: 16.8rem;
+}
+
+.custom-mt {
+  margin-top: 4.8rem;
+}
+
+
+/* Have Question  */
+
+.question-section {
+  background: url('/static/media/circle.6f1eba2b.png') no-repeat;
+  background-position: -93px 50px;
+  background-size: 400px 400px;
+}
+
+
+.phone--icon {
+  filter: invert(50%) sepia(11%) saturate(1949%) hue-rotate(115deg) brightness(104%) contrast(86%);
+}
+
+
+.contact--options .contact--map a:hover .img-container,
+.contact--email a:hover .img-container,
+.contact--phone a:hover .img-container {
+  background-color: #3d9c86;
+
+}
+
+.contact--map a:hover .img-container img,
+.contact--email a:hover .img-container img,
+.contact--phone a:hover .img-container img {
+  filter: brightness(419%);
 }
