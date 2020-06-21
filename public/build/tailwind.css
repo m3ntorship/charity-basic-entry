@@ -100,3 +100,7 @@
   width: 11.3rem;
   height: 5rem;
 }
+
+.custom__line_height {
+  line-height: 4.375rem;
+}
