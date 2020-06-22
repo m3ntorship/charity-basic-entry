@@ -85,9 +85,13 @@
 }
 
 
-
-
 /* Donations Section */
+
+.donation--section {
+  background: url('/static/media/blocks.png') no-repeat;
+  background-position: 0px 50px;
+  background-size: 350px 390px;
+}
 
 .donation__inputs {
   width: 11.3rem;
