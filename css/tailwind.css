@@ -99,6 +99,11 @@ input[type="number"] {
   -moz-appearance: textfield;
 }
 
+
+.donation__select {
+  height: 100%;
+}
+
 .donation__select option {
   background: #f4f4f5;
   color: #254151;
