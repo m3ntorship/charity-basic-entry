@@ -496,7 +496,7 @@
         <div class="grid md:grid-cols-12 gap-8">
 
           <!-- Donation Form -->
-          <div class="md:col-start-1 md:col-span-7 col-span-12 flex flex-col">
+          <div class="md:col-start-1 md:col-span-8 col-span-12 flex flex-col">
             <h6 class="text-xl custom__line_height font-extrabold text-c100">What type of donation are you making</h6>
             <div class="gray-bg px-12 pt-16 pb-5 mt-16">
               <p class="mt-1 text-c600 font-hairline leading-loose">Lorem ipsum dolor, sit amet consectetur adipisicing
@@ -504,29 +504,28 @@
                 Similique,
                 consequatur?
               </p>
-              <h6 class="my-10 ml-1 text-lg text-c100 font-extrabold">Donation Amount</h6>
+              <h6 class="my-10 text-lg text-c100 font-extrabold">Donation Amount</h6>
 
               <form class="w-full">
                 <div class="flex flex-col">
-                  <div class=" md:flex mb-3">
-                    <div class="w-full md:w-1/2 h-28 mb-6 md:mb-0 flex-shrink">
-                      <button class="bg-c000 min-h-full w-full text-c700">$ 200</button>
+                  <div class=" md:flex mb-0 sm:mb-3">
+                    <div class=" md:w-1/3 h-20 mb-4 md:mb-0 flex-shrink">
+                      <button class="bg-c000 btn btn-lg  text-c100lg w-full">$ 200</button>
                     </div>
-                    <div class="md:w-1/2 md:mb-0 h-28 mb-6 md:px-3 flex-shrink">
-                      <button class="bg-c000 min-h-full w-full text-c700">$ 400</button>
+                    <div class="md:w-1/3 md:mb-0 h-20 mb-4 md:mx-2 flex-shrink">
+                      <button class="bg-c000 btn btn-lg text-c100lg w-full">$ 400</button>
                     </div>
-                    <div class="md:w-1/2 md:mb-0 h-28 mb-6 flex-shrink">
-                      <button class="bg-c000 min-h-full w-full text-c700">$ 500</button>
+                    <div class=" md:w-1/3 h-20 mb-4 md:mb-0 flex-shrink">
+                      <button class="bg-c000 btn btn-lg text-c100lg w-full">$ 500</button>
                     </div>
                   </div>
-                  <div class="flex mb-6 md:mb-0">
+                  <div class="flex">
                     <div class="w-1/2 ">
-                      <input class="block w-full py-7 text-left px-4 text-center text-base focus:outline-none"
-                        type="number" placeholder="100">
+                      <input class=" w-full py-7 text-left px-5 text-center text-base focus:outline-none" type="number"
+                        placeholder="100">
                     </div>
                     <div class="w-1/2">
-                      <select
-                        class="donation__select block w-full py-7 text-center text-base focus:outline-none text-center pl-20 text-c700"
+                      <select class="donation__select  w-full py-7 text-center text-base focus:outline-none text-c100"
                         name="USD" id="currencies">
                         <option value=">USD">USD</option>
                         <option value="EUR">EUR</option>
@@ -539,21 +538,21 @@
               <form class="w-full">
                 <div class="flex flex-col">
                   <div class=" md:flex mb-4">
-                    <div class="w-full md:w-1/2 md:pr-2 mb-6 md:mb-0 flex-shrink">
+                    <div class="w-full md:w-1/2 md:pr-2 mb-4 md:mb-0 flex-shrink">
                       <input class="block w-full py-7 px-6 text-left text-base focus:outline-none" type="text"
                         placeholder="Your Name">
                     </div>
-                    <div class="md:w-1/2 md:mb-0 mb-6 md:pl-2 flex-shrink">
+                    <div class="md:w-1/2 md:pl-2 flex-shrink">
                       <input class="block w-full py-7 px-6 text-left text-base focus:outline-none" type="text"
                         placeholder="Email">
                     </div>
                   </div>
                   <div class=" md:flex mb-4">
-                    <div class="w-full md:w-1/2 md:pr-2 mb-6 md:mb-0 flex-shrink">
+                    <div class="w-full md:w-1/2 md:pr-2 mb-4 md:mb-0 flex-shrink">
                       <input class="block w-full py-7 px-6 text-left text-base focus:outline-none" type="text"
                         placeholder="Phone">
                     </div>
-                    <div class="md:w-1/2 md:mb-0 mb-6 md:pl-2 flex-shrink">
+                    <div class="md:w-1/2 md:pl-2 flex-shrink">
                       <input class="block w-full py-7 px-6 text-left text-base focus:outline-none" type="text"
                         placeholder="Country">
                     </div>
@@ -565,22 +564,15 @@
               <h6 class="text-lg text-c100 my-8 font-extrabold">Payment Amount</h6>
               <form class="w-full mt-4">
                 <div class="flex flex-col">
-                  <div class="md:flex mb-3">
+                  <div class="md:flex mb-3 ">
 
+                    <div class="md:w-1/2 h-20 flex items-center justify-around bg-c000 mb-4 md:mb-0">
 
-
-
-                    <div
-                      class="w-full md:w-1/2 mb-6 md:mb-0 relative flex items-center justify-between flex-shrink-0 bg-c000 py-7">
-
-
-
-                      <h6 class="text-base text-c700 ml-4 credit__title font-semibold">Credit Card</h6>
-
-
-
-                      <div class="pt-1">
-                        <div class="cnt_min">
+                      <div>
+                        <h6 class="text-base text-c700 credit__title pl-1">Credit Card</h6>
+                      </div>
+                      <div class="pt-2">
+                        <div class=" cnt_min">
                           <input class="" type="radio" name="card" />
                           <img src="/static/media/master-card.png" alt="Select payment method" class="selected_img">
                         </div>
@@ -593,22 +585,13 @@
                             alt="Select payment method" class="selected_img">
                         </div>
                       </div>
-
-
-
-
-
-
-
-
-
-
-
                     </div>
-                    <div class="md:w-1/2 md:mb-0 mb-6 md:pl-1 relative flex-shrink-0">
-                      <img class="absolute z-10 right-0 pt-7 pr-12" src="/static/media/icon-paypal.png" alt="">
-                      <p class="relative pt-6 px-10 min-h-full text-c000 text-base bg-c200">Paypal
-                      </p>
+                    <div class="md:w-1/2 md:mb-0 mb-4 flex-shrink h-20">
+                      <div class="flex justify-betweenitems-center bg-c200 h-20">
+                        <p class="pt-6 px-10 text-c000 text-base">Paypal
+                        </p>
+                        <img class="p-6" src="/static/media/icon-paypal.png" alt="">
+                      </div>
                     </div>
                   </div>
                   <div class=" md:flex mb-3">
@@ -618,12 +601,12 @@
                         type="password" placeholder="Card Number">
                     </div>
                   </div>
-                  <div class=" md:flex mb-6">
-                    <div class="w-full md:w-1/2 mb-3 md:mb-0 flex-shrink">
+                  <div class=" md:flex mb-6 justify-between">
+                    <div class="w-full md:w-1/2 md:pr-2 mb-4 md:mb-0 flex-shrink">
                       <input class="block w-full py-7 text-left px-6 text-base focus:outline-none" type="text"
                         placeholder="Expiry (MM//YY)">
                     </div>
-                    <div class="md:w-1/2 md:mb-0 mb-6 md:pl-1 flex-shrink">
+                    <div class="md:w-1/2 md:mb-0 mb-4 md:pl-2 flex-shrink">
                       <input class="block w-full py-7 px-6 text-left text-base focus:outline-none" type="text"
                         placeholder="Country">
                     </div>
