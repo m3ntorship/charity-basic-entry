@@ -99,6 +99,10 @@ input[type="number"] {
   -moz-appearance: textfield;
 }
 
+.amount__btn:hover {
+  filter: brightness(98%);
+}
+
 
 select {
   -webkit-appearance: none;

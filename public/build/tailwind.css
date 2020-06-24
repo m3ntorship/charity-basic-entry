@@ -116,6 +116,11 @@ input[type="number"] {
   -moz-appearance: textfield;
 }
 
+.amount__btn:hover {
+  -webkit-filter: brightness(98%);
+          filter: brightness(98%);
+}
+
 select {
   -webkit-appearance: none;
   -moz-appearance: none;
