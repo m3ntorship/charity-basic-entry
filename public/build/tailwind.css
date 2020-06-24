@@ -171,3 +171,23 @@ select {
 .credit__title {
   color: #a0aec0;
 }
+
+/* Home Page Section */
+
+.homepage--container {
+  background: url('/static/media/dots.png') no-repeat;
+  background-position: 80px 290px;
+}
+
+.homesection__greenbox {
+  width: 197px;
+  height: 186px;
+  z-index: 999;
+}
+
+.homesection__redbox {
+  width: 151px;
+  height: 404px;
+  top: 100px;
+  right: 90px;
+}
