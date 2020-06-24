@@ -165,14 +165,15 @@ select {
 
 
 .homesection__greenbox {
-  width: 197px;
-  height: 186px;
+  width: 150px;
+  height: 150px;
   z-index: 999;
+  right: 10px;
 }
 
 .homesection__redbox {
-  width: 151px;
-  height: 404px;
-  top: 100px;
+  width: 120px;
+  height: 300px;
+  top: 150px;
   right: 90px;
 }
