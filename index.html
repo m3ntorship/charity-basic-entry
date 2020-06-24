@@ -233,10 +233,6 @@
             <span class="text-sm text-light text-c600">Volunteer</span>
           </h6>
         </div>
-
-
-
-
         <div class="card-1 relative card-trigger">
           <div class="social--icons absolute z-10 -ml-5 custom-mt child-target">
             <div>
@@ -493,13 +489,150 @@
     </section>
 
 
+    <!-- Donations Section -->
+
+    <section class="donation--section">
+      <div class="container pt-0">
+        <div class="grid grid-cols-1 md:grid-cols-12 md:gap-8">
+
+          <!-- Donation Form -->
+          <div class="md:col-start-1 col-span-12 md:col-span-7 flex flex-col">
+            <h6 class="text-xl custom__line_height font-extrabold text-c100">What type of donation are you making</h6>
+            <div class="gray-bg px-12 pt-16 pb-5 mt-16">
+              <p class="mt-1 text-c600 font-hairline leading-loose">Lorem ipsum dolor, sit amet consectetur adipisicing
+                elit.
+                Similique,
+                consequatur?
+              </p>
+              <h6 class="my-10 text-lg text-c100 font-extrabold">Donation Amount</h6>
+
+              <form class="w-full">
+                <div class="flex flex-col">
+                  <div class=" md:flex mb-0 sm:mb-4">
+                    <div class=" md:w-1/3 h-20 mb-4 md:mb-0 flex-shrink">
+                      <button class="amount__btn bg-c000 h-full  text-c100 w-full">$ 200</button>
+                    </div>
+                    <div class="md:w-1/3 md:mb-0 h-20 mb-4 md:mx-2 flex-shrink">
+                      <button class="amount__btn bg-c000 h-full text-c100 w-full">$ 400</button>
+                    </div>
+                    <div class=" md:w-1/3 h-20 mb-4 md:mb-0 flex-shrink">
+                      <button class="amount__btn bg-c000 h-full text-c100 w-full">$ 500</button>
+                    </div>
+                  </div>
+                  <div class="flex">
+                    <div class="w-1/2 ">
+                      <input class=" w-full py-7 text-left px-5 text-center text-base focus:outline-none" type="number"
+                        placeholder="100">
+                    </div>
+                    <div class="w-1/2">
+                      <select class="donation__select  w-full py-7 text-center text-base focus:outline-none text-c100"
+                        name="USD" id="currencies">
+                        <option value=">USD">USD</option>
+                        <option value="EUR">EUR</option>
+                        <option value="EGP">EGP</option>
+                      </select>
+                    </div>
+                  </div>
+              </form>
+              <h6 class="text-lg text-c100 my-8 font-extrabold">Personal Informations</h6>
+              <form class="w-full">
+                <div class="flex flex-col">
+                  <div class="md:grid grid-cols-2 gap-2 mb-4">
+                    <div class="mb-4 md:mb-0">
+                      <input class="block w-full py-7 px-6 text-left text-base focus:outline-none" type="text"
+                        placeholder="Your Name">
+                    </div>
+                    <div class="">
+                      <input class="block w-full py-7 px-6 text-left text-base focus:outline-none" type="text"
+                        placeholder="Email">
+                    </div>
+                  </div>
+                  <div class=" md:grid grid-cols-2 gap-2 mb-4">
+                    <div class="mb-4 md:mb-0">
+                      <input class="block w-full py-7 px-6 text-left text-base focus:outline-none" type="text"
+                        placeholder="Phone">
+                    </div>
+                    <div class="">
+                      <input class="block w-full py-7 px-6 text-base focus:outline-none" type="text"
+                        placeholder="Country">
+                    </div>
+                  </div>
+                  <textarea class="p-5 text-base focus:outline-none" name="" id="" cols="29" rows="8"
+                    placeholder="Address"></textarea>
+                </div>
+              </form>
+              <h6 class="text-lg text-c100 my-8 font-extrabold">Payment Amount</h6>
+              <form class="w-full">
+                <div class="flex flex-col">
+
+
+
+                  <div class="md:grid grid-cols-2 gap-2 mb-4 ">
+
+                    <div class="bank__btn h-20 flex items-center justify-around bg-c000 mb-3 md:mb-0">
+                      <div>
+                        <h6 class="text-base text-c700 credit__title pl-5">Credit Card</h6>
+                      </div>
+                      <div class="pt-2">
+                        <div class=" cnt_min">
+                          <input class="" type="radio" name="card" />
+                          <img src="/static/media/master-card.png" alt="Select payment method" class="selected_img">
+                        </div>
+                        <div class="cnt_min">
+                          <input type="radio" name="card" /><img src="/static/media/american.png"
+                            alt="Select payment method" class="selected_img">
+                        </div>
+                        <div class="cnt_min">
+                          <input type="radio" name="card" /><img src="/static/media/visa-card.png"
+                            alt="Select payment method" class="selected_img">
+                        </div>
+                      </div>
+                    </div>
+                    <button class="paypal__btn h-20 w-full">
+                      <div class="flex justify-around items-center bg-c200 h-20">
+                        <p class="text-c000 text-base">Paypal
+                        </p>
+                        <img class="p-6" src="/static/media/icon-paypal.png" alt="">
+                      </div>
+                    </button>
+                  </div>
+
+
+
+
+                  <div class="mb-4">
+                    <input
+                      class=" block w-full py-7 px-6 text-left text-base leading-tight focus:outline-none focus:bg-white focus:outline-none"
+                      type="password" placeholder="Card Number">
+                  </div>
+                  <div class=" md:grid grid-cols-2 gap-2 mb-6 justify-between">
+                    <div class="mb-3 md:mb-0 flex-shrink">
+                      <input class="block w-full py-7 text-left px-6 text-base focus:outline-none" type="text"
+                        placeholder="Expiry (MM//YY)">
+                    </div>
+                    <div>
+                      <input class="block w-full py-7 px-6 text-left text-base focus:outline-none" type="text"
+                        placeholder="Country">
+                    </div>
+                  </div>
+                </div>
+                <button class="bg-c300 btn w-full md:w-2/3 py-6 text-c100 font-black">Donate Now</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
     <footer class="footer bg-c100 text-c700">
       <div class="container w-9/12 grid lg:grid-cols-2 md:grid-cols-1 grid-cols-1 gap-4 py-16 text-sm font-hairline">
         <div class="ref-container">
           <div class="grid lg:grid-cols-2 md:grid-cols-1 grid-cols-1" style="opacity: 1; transform: translateX(0%);">
             <div class="footer-card lg:my-0 my-6">
               <h3 class="text-c000 text-lg font-semibold mb-8">About</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id aliquam et , cum odio illo hic provident
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id aliquam et , cum odio illo hic
+                provident
                 totam!</p><a class="inline-block text-base mt-8 py-4 px-8 font-bold bg-c400 text-c000 hover:bg-c900"
                 href="#">Donate Now</a>
             </div>
@@ -551,7 +684,8 @@
                   <div class="flex justify-between bg-c900 py-4 px-6"><input
                       class="bg-c900 w-8/12 flex-grow newsletter_email_input " type="email" name="" id=""
                       placeholder="Enter email"><button class="w-8" type="submit"><span class="newsLetter_send_icon"><i
-                          class="fab fa-telegram-plane"></i></span></button></div>
+                          class="fab fa-telegram-plane"></i></span></button>
+                  </div>
                 </form>
               </div>
             </div>
@@ -559,7 +693,8 @@
         </div>
       </div>
       <div>
-        <p class="text-center py-8 text-sm border-t border-c700 bg-c100">© Copyright 2020 by m3ntorship.net</p>
+        <p class="text-center py-8 text-sm border-t border-c700 bg-c100">© Copyright 2020 by m3ntorship.net
+        </p>
       </div>
     </footer>
   </div>
