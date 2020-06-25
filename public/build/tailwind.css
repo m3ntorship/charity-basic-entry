@@ -179,7 +179,7 @@ select {
   background-position: 80px 290px;
 }
 
-.homesection__greenbox {
+/* .homesection__greenbox {
   width: 150px;
   height: 150px;
   z-index: 999;
@@ -191,4 +191,42 @@ select {
   height: 300px;
   top: 150px;
   right: 90px;
+} */
+
+.homepage__charactar {
+  grid-column: 6 / 11;
+  grid-row: 1;
+}
+
+.homesection__greenbox {
+  width: 10rem;
+  height: 10rem;
+}
+
+.homesection__redbox {
+  width: 8.5rem;
+  height: 16rem;
+}
+
+/* .homesection__greenbox {
+  grid-column: 10 / 13;
+  grid-row: 1 / 2;
+}
+
+.homesection__redbox {
+  grid-column: 10/ 12;
+  grid-row: ;
+} */
+
+.chairty__banner {
+  grid-column: 10 / 13;
+  grid-row: 1;
+  border-color: red;
+}
+
+.homepage__section-text h6 {
+  -ms-writing-mode: tb-rl;
+      writing-mode: vertical-rl;
+  transform: scale(-1);
+  padding: 2.5rem;
 }
