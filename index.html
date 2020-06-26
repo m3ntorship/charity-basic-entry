@@ -627,10 +627,15 @@
 
     <!-- Home Page -->
 
-    <section class="homepage--container">
-      <div class="container grid grid-cols-12 grid-rows-2 gap-4">
+    <section class="homepage--container relative">
+
+
+
+      <div class="container grid grid-cols-12 grid-rows-2 col-gap-8 ">
+
+
         <div class="col-start-1 col-end-6">
-          <h6 class="text-xl text-c100 font-black">We Are Here To Help Everyone In Need</h6>
+          <h6 class="text-xl text-c100 font-extrabold">We Are Here To Help Everyone In Need</h6>
           <p class="mt-16 text-base text-c600">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero
             cupiditate
             iure praesentium
@@ -638,16 +643,24 @@
             error est libero dolore quam aperiam esse assumenda odit distinctio officiis? Numquam veritatis quod
             repudiandae.</p>
         </div>
-        <div class="homepage__charactar bg-c100">
-          <img class="object-cover w-full h-full" src="/static/media/vadim-sadovski.jpg" alt="">
+
+
+        <div class="bg-c100 col-start-7 col-end-12 row-start-1 row-end-auto">
+          <div class="character__container h-full">
+            <img class="object-cover w-full min-h-full" src="/static/media/vadim-sadovski.jpg" alt="">
+          </div>
         </div>
-        <div class="chairty__banner">
-          <div class="homesection__greenbox bg-c100 ml-auto"><img class="object-cover w-full h-full"
+
+
+        <div class="col-start-11 col-end-13 row-start-1">
+          <div class="homesection__greenbox bg-c100 ml-12"><img class="object-cover w-full h-full"
               src="/static/media/steve-johnson.jpg" alt=""></div>
-          <div class="homesection__redbox homepage__section-text bg-c200 text-c000">
+          <div class="homesection__redbox homepage__section-text bg-c200 text-c000 -ml-8">
             <h6 class="text-3xl">Chairty Theme</h6>
           </div>
         </div>
+      </div>
+      <div class="bg-c800 bg-opacity-50 overlay__layer w-full absolute ">
       </div>
     </section>
 

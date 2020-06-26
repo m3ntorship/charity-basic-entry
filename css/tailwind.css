@@ -160,59 +160,40 @@ select {
 
 .homepage--container {
   background: url('/static/media/dots.png') no-repeat;
-  background-position: 80px 290px;
+  background-position: 80px 320px;
 }
 
-
-/* .homesection__greenbox {
-  width: 150px;
-  height: 150px;
-  z-index: 999;
-  right: 10px;
-}
-
-.homesection__redbox {
-  width: 120px;
-  height: 300px;
-  top: 150px;
-  right: 90px;
-} */
-
-
-
-.homepage__charactar {
-  grid-column: 6 / 11;
-  grid-row: 1;
-}
-
-.homesection__greenbox {
-  width: 10rem;
-  height: 10rem;
-}
-
-.homesection__redbox {
-  width: 8.5rem;
-  height: 16rem;
-}
-
-/* .homesection__greenbox {
-  grid-column: 10 / 13;
-  grid-row: 1 / 2;
-}
-
-.homesection__redbox {
-  grid-column: 10/ 12;
-  grid-row: ;
-} */
-
-.chairty__banner {
+/* .chairty__banner {
   grid-column: 10 / 13;
   grid-row: 1;
   border-color: red;
+} */
+
+.character__container {
+  height: 42.875rem;
+}
+
+.homesection__greenbox {
+  height: 12.5rem;
+  width: 11.68rem;
+}
+
+.homesection__redbox {
+  height: 25.25rem;
+  width: 9.37rem;
+  /* margin-left: 4.37rem; */
 }
 
 .homepage__section-text h6 {
   writing-mode: vertical-rl;
   transform: scale(-1);
-  padding: 2.5rem;
+  padding-bottom: 6rem;
+  padding-right: 3rem;
+
+}
+
+.overlay__layer {
+  height: 25rem;
+  top: 38.5rem;
+  z-index: -1;
 }
