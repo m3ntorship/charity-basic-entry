@@ -156,9 +156,13 @@ select {
 
 /* Home Page Section */
 
-.homepage--container {
-  background: url("/static/media/dots.png") no-repeat;
-  background-position: 80px 320px;
+/* 'lg': '1024px' */
+@media screen and (min-width: 1024px) {
+  .homepage--container {
+    background: url("/static/media/dots.png") no-repeat;
+    background-position: 80px 300px;
+    position: relative;
+  }
 }
 
 /* .chairty__banner {
@@ -184,13 +188,44 @@ select {
 
 .homepage__section-text h6 {
   writing-mode: vertical-rl;
-  transform: scale(-1);
-  padding-bottom: 6rem;
-  padding-right: 3rem;
+  transform: rotate(-180deg);
 }
 
-.overlay__layer {
-  bottom: 28rem;
+/* .overlay__layer {
+  position: absolute;
+  bottom: -150px;
   z-index: -1;
-  height: 30rem;
+  height: 25rem;
+} */
+
+.overlay__layer {
+  position: relative;
+  top: 40px;
+  height: 15rem;
+}
+
+/* 'lg': '1024px' */
+@media screen and (min-width: 1024px) {
+  .overlay__layer {
+    height: 20rem;
+  }
+
+  .overlay__layer::before {
+    content: "";
+    position: absolute;
+    background-color: #f0ece3;
+    width: 240px;
+    height: 20rem;
+    left: -240px;
+  }
+
+  .overlay__layer::after {
+    content: "";
+    position: absolute;
+    background-color: #f0ece3;
+    width: 210px;
+    height: 20rem;
+    right: -210px;
+    top: 0;
+  }
 }
