@@ -39,7 +39,7 @@
   opacity: 1;
 }
 
-.card--fade>div {
+.card--fade > div {
   position: absolute;
   top: 0;
   right: 0;
@@ -51,8 +51,8 @@
   transition: opacity 0.4s ease-in;
 }
 
-.card-trigger:hover>.card--fade>div,
-.social--icons:hover+.card--fade>div {
+.card-trigger:hover > .card--fade > div,
+.social--icons:hover + .card--fade > div {
   opacity: 0.3;
 }
 
@@ -77,8 +77,10 @@
 }
 
 .phone--icon {
-  -webkit-filter: invert(50%) sepia(11%) saturate(1949%) hue-rotate(115deg) brightness(104%) contrast(86%);
-          filter: invert(50%) sepia(11%) saturate(1949%) hue-rotate(115deg) brightness(104%) contrast(86%);
+  -webkit-filter: invert(50%) sepia(11%) saturate(1949%) hue-rotate(115deg)
+    brightness(104%) contrast(86%);
+          filter: invert(50%) sepia(11%) saturate(1949%) hue-rotate(115deg)
+    brightness(104%) contrast(86%);
 }
 
 .contact--options .contact--map a:hover .img-container,
@@ -125,7 +127,7 @@ select {
   -webkit-appearance: none;
   -moz-appearance: none;
   text-indent: 1px;
-  text-overflow: '';
+  text-overflow: "";
 }
 
 .donation__select {
@@ -162,7 +164,7 @@ select {
   margin: 0;
 }
 
-.cnt_min input[type="radio"]:checked~.selected_img {
+.cnt_min input[type="radio"]:checked ~ .selected_img {
   border: solid 1px green;
   box-shadow: 0px 1px 4px 0px #ccc;
   border-radius: 5px;
@@ -170,4 +172,82 @@ select {
 
 .credit__title {
   color: #a0aec0;
+}
+
+/* Home Page Section */
+
+/* 'lg': '1024px' */
+
+@media screen and (min-width: 1024px) {
+  .homepage--container {
+    background: url("/static/media/dots.png") no-repeat;
+    background-position: 80px 300px;
+    position: relative;
+  }
+}
+
+/* .chairty__banner {
+  grid-column: 10 / 13;
+  grid-row: 1;
+  border-color: red;
+} */
+
+.character__container {
+  height: 42.875rem;
+}
+
+.homesection__greenbox {
+  height: 12.5rem;
+  width: 11.68rem;
+}
+
+.homesection__redbox {
+  height: 25.25rem;
+  width: 9.37rem;
+  /* margin-left: 4.37rem; */
+}
+
+.homepage__section-text h6 {
+  -ms-writing-mode: tb-rl;
+      writing-mode: vertical-rl;
+  transform: rotate(-180deg);
+}
+
+/* .overlay__layer {
+  position: absolute;
+  bottom: -150px;
+  z-index: -1;
+  height: 25rem;
+} */
+
+.overlay__layer {
+  position: relative;
+  height: 100%;
+}
+
+/* 'lg': '1024px' */
+
+@media screen and (min-width: 1024px) {
+  .overlay__layer {
+    height: 20rem;
+  }
+
+  .overlay__layer::before {
+    content: "";
+    position: absolute;
+    background-color: #f0ece3;
+    width: 100%;
+    height: 20rem;
+    left: -100%;
+  }
+
+  .overlay__layer::after {
+    content: "";
+    position: absolute;
+    background-color: #f0ece3;
+    width: 100%;
+    height: 20rem;
+    right: -100%;
+    top: 0;
+  }
 }
